@@ -36,7 +36,7 @@ def prepare():
         for line in f:
             lon.append(int(line))
 
-    # sort and filter the list
+    # sort the list
     lon.sort()
     i, k = find_two_sum(lon)
     print("\nResult: {} + {} = {}\nAnswer: {}".format(i, k, target, k * i))
